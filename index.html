@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AIEO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> body {font-family: "Stack Sans Text", sans-serif;} .mySlides {display: none} </style>
+</head>
+<body>
+<style>
+body {font-family: "Stack Sans Text", sans-serif; line-height:1.6;}
+.mySlides {display:none;}
+.w3-red {background-color:#b71c1c!important;}
+.w3-black {background-color:#000!important;}
+.w3-white {background-color:#fff!important;}
+.w3-button {border-radius:5px;}
+header h1, header h3 {color:#fff; text-shadow:1px 1px 4px rgba(0,0,0,0.6);}
+</style>
+<!-- Navbar -->
+<header class="w3-top">
+  <nav class="w3-bar w3-black w3-card" aria-label="Main Navigation">
+    <!-- Hamburger menu cho màn hình nhỏ -->
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" 
+       href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+
+    <!-- Menu chính -->
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#intro" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INTRODUCTION</a>
+    <a href="#courses" class="w3-bar-item w3-button w3-padding-large w3-hide-small">COURSES</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">REGISTER NOW!</a>
+
+    <!-- Dropdown SAMPLE TEST -->
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">
+        SAMPLE TEST <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Listening</a>
+        <a href="#" class="w3-bar-item w3-button">Reading</a>
+        <a href="#" class="w3-bar-item w3-button">Speaking</a>
+        <a href="#" class="w3-bar-item w3-button">Writing</a>
+      </div>
+    </div>
+
+    <!-- Search Icon -->
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right" 
+       onclick="document.getElementById('searchBar').classList.toggle('w3-hide')">
+      <i class="fa fa-search"></i>
+    </a>
+
+    <!-- Hidden Search Bar -->
+    <div id="searchBar" class="w3-right w3-hide" style="margin-top:10px;">
+      <input type="text" class="w3-input w3-border" placeholder="Type to search...">
+    </div>
+  </nav>
+</header>
+<!-- Navbar cho màn hình nhỏ -->
+<nav id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#intro" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+  <a href="#courses" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">COURSES</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">REGISTER NOW!</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">SAMPLE TEST</a>
+</nav>
+
+<!-- Page content -->
+<main class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <section class="mySlides w3-display-container w3-center">
+    <img src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.6435-9/88166315_3793565467350059_6978391815191789568_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=cf85f3&_nc_eui2=AeGyxc1xVJq6Xz5jONKTen7CM8C6kyB83WAzwLqTIHzdYCz7tZRKTefSUBYYpv3W-RMhXrkipcdOH1XgYv2O-_4X&_nc_ohc=GLSqrNnFONIQ7kNvwENojDq&_nc_oc=AdnAfemnNbm7gnOMyfAOIC3mMVM7VdjFaemz9-TAciaGH00B3MBaDMA3kItVe1y1CxU&_nc_zt=23&_nc_ht=scontent.fsgn3-1.fna&_nc_gid=o68k4jABAQD3EbnIfe9D3w&oh=00_AfixvccrF7Ovbf9AjLksmGvKHBszwPLzluifGoVHZ2lFtA&oe=69536E35" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>MOCK EXAM ROOM</h3>
+      <p><b>Strict, fair, and comfortable</b></p>
+    </div>
+  </section>
+
+  <section class="mySlides w3-display-container w3-center">
+    <img src="https://media.zim.vn/649a4ea78e09d556f7b2310d/cambridge-ielts.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-black w3-padding-32 w3-hide-small">
+      <h3>TEST BANK</h3>
+      <p><b>Complete collection of official Cambridge tests</b></p>
+    </div>
+  </section>
+
+  <section class="mySlides w3-display-container w3-center">
+    <img src="https://toquoc.mediacdn.vn/280518851207290880/2022/6/27/avatar1656330563623-1656330564600419723154.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>INTERFACE</h3>
+      <p><b>Authentic exam interface</b></p>
+    </div>
+  </section>
+
+  <!-- The Description Section -->
+ <section class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="intro">
+  <h2 style="font-family:'Stack Sans Text';" class="w3-center w3-red">ABOUT US</h2>
+  <p class="w3-opacity"><i>Your gateway to high IELTS scores</i></p>
+  
+  <article class="w3-justify">
+    AIEO is designed to help students achieve high scores in the IELTS exam. Our platform provides authentic practice tests, detailed tips, and strategies for Listening, Reading, Writing, and Speaking sections. Whether you are a beginner or aiming for Band 8+, our resources are tailored to improve your skills efficiently. With interactive exercises and real-time feedback, you can track your progress and focus on your weak areas.
+  </article>
+  
+  <p class="w3-opacity"><i>Our excellent candidates</i></p>
+  <div class="w3-row w3-padding-32">
+    
+    <figure class="w3-third w3-center">
+      <img src="./8.0baotrang.png" class="w3-round w3-margin-bottom" alt="Bảo Trang" style="width:80%">
+      <figcaption>Bao Trang</figcaption>
+    </figure>
+
+    <figure class="w3-third w3-center">
+      <img src="./8.5baoan.png" class="w3-round w3-margin-bottom" alt="Bảo An" style="width:80%">
+      <figcaption>Bao An</figcaption>
+    </figure>
+
+    <figure class="w3-third w3-center">
+      <img src="./8.5trongban.png" class="w3-round w3-margin-bottom" alt="Trọng Bân" style="width:80%">
+      <figcaption>Trong Ban</figcaption>
+    </figure>
+
+    <figure class="w3-third w3-center">
+      <img src="./9.0minhduc.png" class="w3-round w3-margin-bottom" alt="Minh Đức" style="width:80%">
+      <figcaption>Minh Đuc</figcaption>
+    </figure>
+
+    <figure class="w3-third w3-center">
+      <img src="./9.0quynhtrang.png" class="w3-round w3-margin-bottom" alt="Quỳnh Trang" style="width:80%">
+      <figcaption>Quynh Trang</figcaption>
+    </figure>
+
+    <figure class="w3-third w3-center">
+      <img src="./9.0tahoa.png" class="w3-round w3-margin-bottom" alt="Tạ Hoà" style="width:80%">
+      <figcaption>Ta Hoa</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+
+  <!-- The Courses Section -->
+  <section class="w3-black" id="courses">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">IELTS COURSES</h2>
+      <p class="w3-opacity w3-center"><i>Choose your pathway to your target band</i></p><br>
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">IELTS LAUNCHPAD<span class="w3-tag w3-red w3-margin-left">Beginner</span></li>
+        <li class="w3-padding">IELTS BOOSTER<span class="w3-tag w3-red w3-margin-left">Recommended</span></li>
+        <li class="w3-padding">IELTS MASTER<span class="w3-badge w3-right w3-margin-right">NEW</span></li>
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <article class="w3-third w3-margin-bottom">
+          <img src="./lp.png" alt="Launchpad" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>LAUNCHPAD</b></p>
+            <p class="w3-opacity">Real mock exam that follows the test format.</p>
+            <p>Kickstart your IELTS journey with a solid foundation to reach band 6.5.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Enter course</button>
+          </div>
+        </article>
+
+        <article class="w3-third w3-margin-bottom">
+          <img src="./b.png" alt="Booster" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>BOOSTER</b></p>
+            <p class="w3-opacity">With AI-powered examiner feedback</p>
+            <p>Fast-track your skills with intensive practice and strategies to hit band 7.5.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Enter course</button>
+          </div>
+        </article>
+
+        <article class="w3-third w3-margin-bottom">
+          <img src="./m.png" alt="Master" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>MASTER</b></p>
+            <p class="w3-opacity">With free full-length mock tests</p>
+            <p>Master every section and reach the peak of IELTS with scores of 8–9.</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Enter course</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+<!-- Ticket Modal -->
+<div id="ticketModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-top w3-card-4">
+    <header class="w3-container w3-teal w3-center w3-padding-32">
+      <span onclick="document.getElementById('ticketModal').style.display='none'" class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+      <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>COURSES</h2>
+    </header>
+    <div class="w3-container">
+      <p><label><i class="fa fa-shopping-cart"></i> 3-month course, $50 each</label></p>
+      <input class="w3-input w3-border" type="text" placeholder="How many?">
+      <p><label><i class="fa fa-user"></i> Send To</label></p>
+      <input class="w3-input w3-border" type="text" placeholder="Enter email">
+      <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right" onclick="openPaymentModal()">PAY <i class="fa fa-check"></i></button>
+      <button class="w3-button w3-red w3-section" onclick="document.getElementById('paymentModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+      <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom w3-card-4 w3-center w3-padding-32" style="max-width:400px;">
+    <span onclick="document.getElementById('paymentModal').style.display='none'" class="w3-button w3-xlarge w3-display-topright">×</span>
+    <h3 class="w3-text-red"><i class="fa fa-check-circle"></i> Congrats! You have been scammed!</h3>
+    <p>Thanks for donating us xxxx $ </p>
+    <button class="w3-button w3-teal w3-margin-top" onclick="document.getElementById('paymentModal').style.display='none'">OK</button>
+  </div>
+</div>
+
+  <!-- Contact Section -->
+  <section class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="contact">
+    <h2 style="font-family:'Stack Sans Text';" class="w3-center w3-red">REGISTER TO BECOME A MEMBER</h2>
+    <p class="w3-opacity w3-center"><i>Join our forum now!</i></p>
+
+    <div class="w3-row w3-padding-32">
+      <aside class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> LSTS, HCM, Vietnam<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 0000001<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: aieotheforum@mail.com<br>
+      </aside>
+
+      <aside class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<!-- Image of location/map -->
+<img src="https://dvt.tvu.edu.vn/uploads/news/2020_06/tphcm-co-dia-diem-thi-ielts-tren-may-tinh-thu-2-1.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/conglongnechcuaanhhuy" target="_blank">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  </a>
+  <a href="https://www.instagram.com/ielts_izone/" target="_blank">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </a>
+  <a href="https://x.com/" target="_blank">
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+  </a>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > x.length) {myIndex = 1}
+x[myIndex-1].style.display = "block";
+setTimeout(carousel, 4000);
+}
+function openPaymentModal() {
+  // đóng Ticket Modal trước
+  document.getElementById('ticketModal').style.display = 'none';
+  // mở Payment Modal
+  document.getElementById('paymentModal').style.display = 'block';
+}
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+var x = document.getElementById("navDemo");
+if (x.className.indexOf("w3-show") == -1) {
+x.className += " w3-show";
+} else {
+x.className = x.className.replace(" w3-show", "");
+}
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+</script>
+
+</body>
+</html>
